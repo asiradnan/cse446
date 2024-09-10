@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+</style>
+<body>
+  <form onsubmit="App.donate(); return false;">
+    <label for="phone">Enter your Phone Number: </label>
+    <input name="phone" id="donor_phone" type="number"><br>
+    <label for="zone">Enter Zone: </label>
+    <select id="zone" name="zone">
+        <option value="sylhet">Sylhet</option>
+        <option value="chittagong_north">Chittagong (North)</option>
+        <option value="chittagong_south">Chittagong (South)</option>
+    </select><br>
+    <label for="amount">Enter Amount (ETH): </label>
+    <input name="amount" id="amount" type="number"><br>
+    <button type="submit">Proceed</button>
+  </form>
+
+  <p id="accountAddress" class="text-center">
+
+
+  </p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

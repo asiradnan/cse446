@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donor Registration</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+</style>
+<body>
+  <form onsubmit="App.register_donor(); return false;">
+    <label for="name">Enter your Name: </label>
+    <input name="name" id="donor_name" type="text"><br>
+    <label for="phone">Enter Phone Number: </label>
+    <input name="phone" id="donor_phone" type="number"><br>
+    <button type="submit">Register</button>
+  </form>
+
+
+  <p id="accountAddress" class="text-center">
+
+
+  </p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
